@@ -84,4 +84,3 @@ TEST_F(ConsistentHashingTest, LoadDistribution)
 }
 
 
-// g++ ConsistentHashingTest.cpp ConsistentHashing.c++ -lgtest -lgtest_main -pthread -o tests

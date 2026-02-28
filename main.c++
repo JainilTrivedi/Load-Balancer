@@ -68,6 +68,3 @@ int main()
 
     return 0;
 }
-
-
-// g++ main.c++ ConsistentHashing.c++

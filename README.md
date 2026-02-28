@@ -15,6 +15,7 @@ Implements virtual nodes, weighted nodes, deterministic 64-bit FNV-1a hashing, a
 - Weighted distribution (node.weight)
 - Thread-safety via `std::mutex` (coarse-grained)
 - Lookup returns `std::optional<Node>` (empty if ring is empty)
+- Unit Tests to make sure functions work as expected! 
 
 ## Build (Windows / WSL / Linux)
 Requirements: g++ with C++17 support.
@@ -23,5 +24,14 @@ From repository folder containing `ConsistantHashing.c++`:
 
 Windows (MinGW/MSYS/Git Bash / PowerShell):
 ```bash
-g++ -std=c++17 -O2 -pthread "ConsistantHashing.c++" 
+g++ main.c++ ConsistentHashing.c++
+# then
 .\a.out
+```
+
+To run  tests:
+```bash
+g++ ConsistentHashingTest.cpp ConsistentHashing.c++ -lgtest -lgtest_main -pthread -o tests
+# then
+./tests
+```
