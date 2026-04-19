@@ -32,6 +32,7 @@ g++ main.c++ ConsistentHashing.c++
 To run  tests:
 ```bash
 g++ ConsistentHashingTest.cpp ConsistentHashing.c++ -lgtest -lgtest_main -pthread -o tests
-# then
+
+then
 ./tests
 ```
